@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+   
+}
+
+.profile-container {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+
+.back-btn, .more-options {
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.profile-info {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.profile-info .profile-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-info h3 {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #333;
+}
+
+.profile-info p {
+    font-size: 14px;
+    color: #777;
+}
+
+.menu {
+    margin-top: 20px;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.menu-item:hover {
+    background-color: #e0f7fa;
+}
+
+.menu-item i {
+    font-size: 18px;
+    color: #333;
+}
+
+.menu-item span {
+    flex: 1;
+    margin-left: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.menu-item .fas.fa-chevron-right {
+    font-size: 14px;
+    color: #bbb;
+}
+
+</style>
+<body>
+
+<div class="profile-container">
+    <div class="header">
+        <a href="home.html">
+            <button class="back-btn">
+                <i class="fas fa-arrow-left"></i>
+            </button>
+        </a>
+        
+        <h2>Profile</h2>
+        <button class="more-options"><i class="fas fa-ellipsis-h"></i></button>
+    </div>
+    
+    <div class="profile-info">
+        <img src="./images/profile.jpg" alt="Profile Picture" class="profile-pic">
+        <h3>KAMESH G</h3>
+        <p>I love Homely food</p>
+    </div>
+    
+    <div class="menu">
+        <div class="menu-item">
+            <i class="fas fa-user"></i>
+            <span>Personal Info</span>
+            <i class="fas fa-chevron-right"></i>
+        </div>
+        <div class="menu-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Addresses</span>
+            <i class="fas fa-chevron-right"></i>
+        </div>
+        <div class="menu-item">
+            <i class="fas fa-shopping-cart"></i>
+            <span>Cart</span>
+            <i class="fas fa-chevron-right"></i>
+        </div>
+        <div class="menu-item">
+            <i class="fas fa-heart"></i>
+            <span>Favourite</span>
+            <i class="fas fa-chevron-right"></i>
+        </div>
+        <div class="menu-item">
+            <i class="fas fa-bell"></i>
+            <span>Notifications</span>
+            <i class="fas fa-chevron-right"></i>
+        </div>
+        <div class="menu-item">
+            <i class="fas fa-credit-card"></i>
+            <span>Payment Method</span>
+            <i class="fas fa-chevron-right"></i>
+        </div>
+        <div class="menu-item">
+            <i class="fas fa-question-circle"></i>
+            <span>FAQs</span>
+            <i class="fas fa-chevron-right"></i>
+        </div>
+        <div class="menu-item">
+            <i class="fas fa-star"></i>
+            <span>User Reviews</span>
+            <i class="fas fa-chevron-right"></i>
+        </div>
+        <div class="menu-item">
+            <i class="fas fa-cog"></i>
+            <span>Settings</span>
+            <i class="fas fa-chevron-right"></i>
+        </div>
+        <div class="menu-item">
+            <i class="fas fa-sign-out-alt"></i>
+            <span>Log Out</span>
+            <i class="fas fa-chevron-right"></i>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+</body>
+</html>

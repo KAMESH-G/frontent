@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 400px;
+    border-radius: 25px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: #22c55e;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.form-container {
+    padding: 20px;
+    text-align: center;
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+form input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+form label {
+    display: block;
+    margin: 20px 0;
+    font-size: 14px;
+    color: #333;
+    text-align: left;
+}
+
+form button {
+    width: 100%;
+    padding: 15px;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+form button:hover {
+    background-color: #333;
+}
+
+.form-container p {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+.form-container a {
+    color: #fff;
+    text-decoration: none;
+}
+.continue-button {
+    position: absolute;
+    text-decoration: none;
+    bottom: 30px; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    padding: 12px 0; 
+    font-size: 16px; 
+    color: #fff; /* Font color set to white */
+    background-color: #22c55e;
+    border: none;
+    border-radius: 25px; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+}
+.continue-button:hover {
+        background-color: #88f0ae;
+    }
+
+
+
+
+
+</style>
+<body>
+    <div class="container">
+        <!-- Image Section -->
+        <div class="image-container">
+            <img src="./images/delicious-fried-chicken-plate.jpg" alt="Food Image">
+        </div>
+
+        <!-- Form Section -->
+        <div class="form-container">
+            <h2>Set Your Profile</h2>
+            <form>
+                <input type="text" placeholder="Enter your name">
+                <input type="email" placeholder="Enter your email">
+                <input type="text" placeholder="Enter Mobile Number">
+                <input type="text" placeholder="Enter Location">
+                <label>
+                    <input type="checkbox"> I accept all terms & condition
+                </label>
+                <a class="continue-button" href="continue1.html">Continue</a>
+            </form>
+            <p>Already have an account? <a href="#">Login now</a></p>
+        </div>
+    </div>
+</body>
+</html>

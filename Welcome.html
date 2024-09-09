@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soon</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; 
+}
+
+body {
+    background-color: #fff; 
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.onboarding-container {
+    width: 390px; 
+    height: 750px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #22c55e;
+    border-radius: 30px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    position: relative;
+}
+
+.logo img {
+    width: 60px;
+    height: 60px;
+    margin-top: 20px;
+}
+
+.heading h1 {
+    font-size: 32px;
+    color: white;
+    text-align: center;
+    margin: 20px 0;
+    font-weight: 700; 
+}
+
+.characters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.character {
+    width: 250px;
+    margin: 10px;
+    height: 250px;
+}
+
+.get-started {
+    margin-bottom: 50px;
+}
+
+.get-started button {
+    background-color: white;
+    color: #22c55e;
+    font-size: 18px;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+.get-started button:hover {
+    background-color: #88f0ae;
+    color: white;
+}
+
+
+
+</style>
+<body>
+    <div class="onboarding-container">
+        <div class="logo">
+            <img src="logo.png" alt="App Logo">
+        </div>
+        <div class="heading">
+            <h1>The Way We Eat!</h1>
+        </div>
+        <div class="characters">
+            <img src="./images/chef-removebg-preview.png" alt="Character 2" class="character">
+        </div>
+        <div class="get-started">
+            <button  onclick="window.location.href='signup.html';">Continue</button>
+        </div>
+    </div>
+</body>
+</html>

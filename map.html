@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delivery App</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Include Google Maps API -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" defer></script>
+  <script src="app.js" defer>
+    function initMap() {
+  // Set up the map options
+  const mapOptions = {
+    zoom: 15,
+    center: { lat: -6.200000, lng: 106.816666 }, // Example lat/lng
+  };
+
+  // Create a new map instance
+  const map = new google.maps.Map(document.getElementById('map'), mapOptions);
+
+  // Define the path for the delivery route
+  const routePath = new google.maps.Polyline({
+    path: [
+      { lat: -6.200000, lng: 106.816666 }, // Start point (example)
+      { lat: -6.201000, lng: 106.818666 }, // End point (example)
+    ],
+    geodesic: true,
+    strokeColor: '#00FF00',
+    strokeOpacity: 1.0,
+    strokeWeight: 4,
+  });
+
+  // Set the route path on the map
+  routePath.setMap(map);
+}
+
+  </script>
+</head>
+<style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #333;
+  color: #fff;
+}
+
+.back-btn {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#map {
+  width: 100%;
+  height: 300px;
+}
+
+.order-summary {
+  padding: 20px;
+}
+
+.coupon, .delivery-time {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.food-items .item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.food-items .item:last-child {
+  border-bottom: none;
+}
+
+</style>
+<body>
+  <div class="container">
+    <header>
+      <button class="back-btn">Back</button>
+      <span class="time">9:41 AM</span>
+    </header>
+    
+    <div id="map"></div>
+    
+    <div class="order-summary">
+      <div class="coupon">
+        <span>Coupon name</span>
+        <span>DISCWITHSTARBUCK</span>
+      </div>
+      <div class="delivery-time">
+        <span>Delivery time</span>
+        <span>30 minutes</span>
+      </div>
+      <div class="food-items">
+        <div class="item">
+          <span>Caramel Macchiato</span><span>$12</span>
+        </div>
+        <div class="item">
+          <span>Greentea Latte</span><span>$10</span>
+        </div>
+        <div class="item">
+          <span>Egg Mayo Breakfast Sandwich</span><span>$15</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

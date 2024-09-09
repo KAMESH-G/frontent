@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>soon</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto', sans-serif; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #000;
+    }
+
+    .container {
+        position: relative;
+        width: 320px;  
+        height: 640px; 
+        border-radius: 30px; 
+        overflow: hidden;
+        background-color: #fff;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .image-container {
+        width: 100%;
+        height: 65%; 
+        overflow: hidden;
+    }
+
+    .background-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .content {
+        position: absolute;
+        bottom: 90px; 
+        left: 20px;
+        right: 20px;
+        text-align: center;
+        color: #333;
+    }
+
+    .content h1 {
+        font-size: 24px; 
+        margin: 0;
+        font-family: 'Roboto', sans-serif; 
+    }
+
+    .content p {
+        font-size: 14px; 
+        color: #666;
+        margin: 10px 0 0;
+        font-family: 'Roboto', sans-serif; 
+    }
+
+    .continue-button {
+        position: absolute;
+        bottom: 30px; 
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+        padding: 12px 0; 
+        font-size: 16px; 
+        color: #fff;
+        background-color: #22c55e;
+        border: none;
+        border-radius: 25px; 
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .continue-button:hover {
+        background-color: #88f0ae;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <img src="./images/2.jpg" alt="Food" class="background-image">
+        </div>
+        <div class="content">
+            <h3>Chef On Call</h3>
+            <p>Personal Chef Booking at Your Doorstep</p>
+        </div>
+        <button class="continue-button" onclick="window.location.href='home.html';">Continue</button>
+    </div>
+</body>
+</html>
